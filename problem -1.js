@@ -16,5 +16,5 @@ function calculateMoney(ticketQuantity) { //, gard ,stuff
     return totalAmount;
 }
 
-const totalCharge = calculateMoney(-130)
+const totalCharge = calculateMoney(130)
 console.log(totalCharge);
