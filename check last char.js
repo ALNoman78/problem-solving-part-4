@@ -1,7 +1,7 @@
 //  check the last char using js 
 // and if a, e, i , o ,u , w, y this type of char gone error
 
-const userName = "uthsow";
+const userName = "uthso";
 
 function checkName (fullName){
     let check = "a,e,i,o,u,w,y";
