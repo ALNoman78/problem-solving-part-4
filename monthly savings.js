@@ -51,3 +51,28 @@ function monthlySaving(number, livingCost) {
 }
 const value = monthlySaving(monthlyMoney , 5400)
 console.log(value);
+
+
+
+
+// 
+// let savingArray = [2000,4000,5000,2300,1000,3000]
+let savingArray = {name : 32, year : "$3",}
+
+function monthlyAmount(money , livingCost) {
+    if (Array.isArray(money) !== true) {
+        return "Invalid Input"
+    }
+    let sum = 0;
+    for (const e of money) {
+        if (e >= 3000) {
+            let taxAmount = e * 20 /100;
+            sum += e - taxAmount;
+        }else{
+            sum += e;
+        }
+    }let remainingAmount = sum - livingCost
+    return remainingAmount >= 0 ? remainingAmount : "earn more"; 
+}
+const amount = monthlyAmount(savingArray , 5400)
+console.log(amount);
