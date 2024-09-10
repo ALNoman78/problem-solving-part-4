@@ -1,4 +1,4 @@
-const userName = "moule"
+const userName = "mou"
 
 function checkName(name) {
     let char = "a,e,i,o,u,w,x";
